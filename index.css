@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, 
+img, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summry, 
+time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{
+    display: block;
+}
+body{
+    line-height: 1;
+} 
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after{
+    content: '';
+    content: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* DEKSTOP */
+header{
+    width: 100%;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.logo{
+    height: 100%;
+    width: 80px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.menu-item{
+    border: 1px solid black;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color:black;
+    color: white;
+    text-decoration: none;
+}
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    row-gap: 70px;
+}
+.hero-title > h1{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: monospace;
+}
+.hero-title > h6{
+    font-size: 20px;
+}
+.about-contact{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+}
+.content-person-img{
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    margin: 3px;
+
+}
+.about-img{
+    height: 370px;
+    width: 60%;
+    
+}
+.about{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slideshow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom:20px
+}
+.contact{
+    width: 40%;
+
+}
+.content-caption{
+    margin: 5px;
+    padding: 15px;
+}
+.content-caption > p{
+    font-style: italic;
+    color: gray;
+}
+.content-person{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+.person-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 2px;
+    font-size: 12px;
+}
+.person-info > h6{
+  font-size: 13px;   
+}
+hr{
+    width: 100px;
+}
+.person-info > p{
+    font-style: italic;
+    color: gray;
+}
+.about-information{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 100px;
+}
+.information-title{
+    font-size: 18px;
+    text-align: justify;
+    padding-bottom: 10px;
+    width: 100%;
+
+}
+.information-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.list-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    margin-bottom: 10px;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card{
+    border: 1px antiquewhite;
+    height: 400px;
+    padding:40px 40px;
+    background-color: rgb(236, 236, 236);
+    width: 300px;
+}
+.card-title{
+    padding-bottom: 50px;
+}
+.card-title h4{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: black;
+}
+.card-title > p{
+    color: black;
+    opacity: 0.5;
+}
+.contact-form{
+    width: 300px;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact-form > input{
+    margin-bottom: 15px;
+    padding: 8px;
+    margin-top: 5px;
+}
+.contact-form > select{
+    margin-bottom: 25px;
+    padding: 8px;
+    margin-top: 5px;
+}
+.send-contact{
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+}
+.our-package-title{
+    font-size: 40px;
+    font-weight: 800;
+    font-family:monospace;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(201, 201, 201);
+    height: 150px;
+    align-items: center;
+    background-color: rgb(202, 201, 201);
+}
+#package{
+    height: 260px;
+}
+.list-package > li {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.list-icon {
+    background-color:grey;
+    color: beige;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.list-paragraf {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    
+}
+
+.list-paragraf > h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.package-1{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin-left:100px;
+    padding-bottom: 50px;
+}
+.package-2{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin-left:100px;
+    padding-bottom: 70px;
+}
+.package-closing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    border-top: 1px solid rgb(201, 200, 200);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.package-closing > h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.package-closing > p{
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    opacity: 0.7;
+}
+.call{
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.call > a{
+    text-decoration: none;
+    color: beige;
+}
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(202, 202, 202);
+    padding-top: 20px;
+}
+#call-us{
+    height: 350px;
+    margin-top: 150px;
+}
